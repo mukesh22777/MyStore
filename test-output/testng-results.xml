@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="My Store" duration-ms="90930" started-at="2020-05-14T23:14:43Z" finished-at="2020-05-14T23:16:14Z">
+    <groups>
+    </groups>
+    <test name="My Store" duration-ms="90930" started-at="2020-05-14T23:14:43Z" finished-at="2020-05-14T23:16:14Z">
+      <class name="sign_inPage.sign_in_page">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:sign_inPage.sign_in_page@9f70c54]" name="beforeMethod" is-config="true" duration-ms="34146" started-at="2020-05-14T19:14:43Z" finished-at="2020-05-14T19:15:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verify_SignInLink()[pri:0, instance:sign_inPage.sign_in_page@9f70c54]" name="verify_SignInLink" duration-ms="267" started-at="2020-05-14T19:15:17Z" finished-at="2020-05-14T19:15:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_SignInLink -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sign_inPage.sign_in_page@9f70c54]" name="afterMethod" is-config="true" duration-ms="1052" started-at="2020-05-14T19:15:17Z" finished-at="2020-05-14T19:15:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:sign_inPage.sign_in_page@9f70c54]" name="beforeMethod" is-config="true" duration-ms="17623" started-at="2020-05-14T19:15:19Z" finished-at="2020-05-14T19:15:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verify_dealAdd()[pri:0, instance:sign_inPage.sign_in_page@9f70c54]" name="verify_dealAdd" duration-ms="61" started-at="2020-05-14T19:15:36Z" finished-at="2020-05-14T19:15:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_dealAdd -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sign_inPage.sign_in_page@9f70c54]" name="afterMethod" is-config="true" duration-ms="1341" started-at="2020-05-14T19:15:36Z" finished-at="2020-05-14T19:15:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:sign_inPage.sign_in_page@9f70c54]" name="beforeMethod" is-config="true" duration-ms="17898" started-at="2020-05-14T19:15:38Z" finished-at="2020-05-14T19:15:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verify_logo()[pri:0, instance:sign_inPage.sign_in_page@9f70c54]" name="verify_logo" duration-ms="97" started-at="2020-05-14T19:15:55Z" finished-at="2020-05-14T19:15:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_logo -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sign_inPage.sign_in_page@9f70c54]" name="afterMethod" is-config="true" duration-ms="884" started-at="2020-05-14T19:15:56Z" finished-at="2020-05-14T19:15:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:sign_inPage.sign_in_page@9f70c54]" name="beforeMethod" is-config="true" duration-ms="16612" started-at="2020-05-14T19:15:56Z" finished-at="2020-05-14T19:16:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="verify_title()[pri:0, instance:sign_inPage.sign_in_page@9f70c54]" name="verify_title" duration-ms="28" started-at="2020-05-14T19:16:13Z" finished-at="2020-05-14T19:16:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_title -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sign_inPage.sign_in_page@9f70c54]" name="afterMethod" is-config="true" duration-ms="890" started-at="2020-05-14T19:16:13Z" finished-at="2020-05-14T19:16:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- sign_inPage.sign_in_page -->
+    </test> <!-- My Store -->
+  </suite> <!-- My Store -->
+</testng-results>

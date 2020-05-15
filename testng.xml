@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My Store" verbose="1" >
+  <test name="My Store" >
+    <classes>
+      <class name="sign_inPage.sign_in_page"/>
+      
+    </classes>
+ </test>
+</suite>
