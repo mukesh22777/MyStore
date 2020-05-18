@@ -90,7 +90,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -99,6 +99,11 @@
                       <a href="#" panel-name="suite-My_Store" class="show-methods passed suite-My_Store"> (show)</a> <!-- show-methods passed suite-My_Store -->
                     </span>
                     <div class="method-list-content passed suite-My_Store">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_Store" title="LoginpageTest.loginpage" hash-for-method="title">title</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-My_Store" title="sign_inPage.sign_in_page" hash-for-method="verify_SignInLink">verify_SignInLink</a> <!-- method navigator-link -->
@@ -112,6 +117,11 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-My_Store" title="sign_inPage.sign_in_page" hash-for-method="verify_logo">verify_logo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-My_Store" title="LoginpageTest.loginpage" hash-for-method="verify_signin">verify_signin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -131,6 +141,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-My_Store" class="panel My_Store">
+          <div class="suite-My_Store-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">LoginpageTest.loginpage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="title">
+                  </a> <!-- title -->
+                  <span class="method-name">title</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_signin">
+                  </a> <!-- verify_signin -->
+                  <span class="method-name">verify_signin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-My_Store-class-passed -->
           <div class="suite-My_Store-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -180,6 +212,7 @@
   &lt;test name=&quot;My Store&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;sign_inPage.sign_in_page&quot;/&gt;
+      &lt;class name=&quot;LoginpageTest.loginpage&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- My Store --&gt;
 &lt;/suite&gt; &lt;!-- My Store --&gt;
@@ -193,7 +226,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">My Store (1 class)</span>
+                <span class="test-name">My Store (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -219,28 +252,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verify_SignInLink')
-data.setCell(0, 2, 'sign_inPage.sign_in_page')
-data.setCell(0, 3, 267);
+data.setCell(0, 1, 'verify_signin')
+data.setCell(0, 2, 'LoginpageTest.loginpage')
+data.setCell(0, 3, 8376);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verify_logo')
-data.setCell(1, 2, 'sign_inPage.sign_in_page')
-data.setCell(1, 3, 97);
+data.setCell(1, 1, 'title')
+data.setCell(1, 2, 'LoginpageTest.loginpage')
+data.setCell(1, 3, 5012);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verify_dealAdd')
+data.setCell(2, 1, 'verify_SignInLink')
 data.setCell(2, 2, 'sign_inPage.sign_in_page')
-data.setCell(2, 3, 61);
+data.setCell(2, 3, 176);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verify_title')
+data.setCell(3, 1, 'verify_logo')
 data.setCell(3, 2, 'sign_inPage.sign_in_page')
-data.setCell(3, 3, 28);
+data.setCell(3, 3, 93);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verify_dealAdd')
+data.setCell(4, 2, 'sign_inPage.sign_in_page')
+data.setCell(4, 3, 84);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verify_title')
+data.setCell(5, 2, 'sign_inPage.sign_in_page')
+data.setCell(5, 3, 13);
 window.suiteTableData['My_Store']= { tableData: data, tableDiv: 'times-div-My_Store'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 453 ms</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-My_Store">
               </div> <!-- times-div-My_Store -->
             </div> <!-- times-div -->
@@ -273,47 +314,74 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_SignInLink</span>
-                <span class="method-start">34146 ms</span>
+                <span class="method-start">25535 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">34419 ms</span>
+                <span class="method-start">25714 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">35471 ms</span>
+                <span class="method-start">26617 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_dealAdd</span>
-                <span class="method-start">53094 ms</span>
+                <span class="method-start">43815 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">53157 ms</span>
+                <span class="method-start">43900 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">54498 ms</span>
+                <span class="method-start">44834 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_logo</span>
-                <span class="method-start">72396 ms</span>
+                <span class="method-start">69643 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">72494 ms</span>
+                <span class="method-start">69737 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">73378 ms</span>
+                <span class="method-start">70672 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_title</span>
-                <span class="method-start">89990 ms</span>
+                <span class="method-start">87372 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">90021 ms</span>
+                <span class="method-start">87386 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">LoginpageTest.loginpage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">88538 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">title</span>
+                <span class="method-start">106342 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">111356 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">112262 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verify_signin</span>
+                <span class="method-start">132116 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">140494 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

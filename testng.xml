@@ -3,6 +3,7 @@
   <test name="My Store" >
     <classes>
       <class name="sign_inPage.sign_in_page"/>
+      <class name="LoginpageTest.loginpage"/>
       
     </classes>
  </test>
