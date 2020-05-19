@@ -1,87 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="My Store" duration-ms="141443" started-at="2020-05-18T17:39:30Z" finished-at="2020-05-18T17:41:51Z">
+  <suite name="Default suite" duration-ms="25509" started-at="2020-05-19T17:33:54Z" finished-at="2020-05-19T17:34:19Z">
     <groups>
     </groups>
-    <test name="My Store" duration-ms="141443" started-at="2020-05-18T17:39:30Z" finished-at="2020-05-18T17:41:51Z">
-      <class name="LoginpageTest.loginpage">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:LoginpageTest.loginpage@61a485d2]" name="beforeMethod" is-config="true" duration-ms="17804" started-at="2020-05-18T13:40:59Z" finished-at="2020-05-18T13:41:16Z">
+    <test name="Default test" duration-ms="25509" started-at="2020-05-19T17:33:54Z" finished-at="2020-05-19T17:34:19Z">
+      <class name="HomepageTest.homepage">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:HomepageTest.homepage@2cb4c3ab]" name="beforeMethod" is-config="true" duration-ms="24395" started-at="2020-05-19T13:33:54Z" finished-at="2020-05-19T13:34:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="title()[pri:0, instance:LoginpageTest.loginpage@61a485d2]" name="title" duration-ms="5012" started-at="2020-05-18T13:41:16Z" finished-at="2020-05-18T13:41:21Z">
+        <test-method status="PASS" signature="verify_T_shirt_link()[pri:0, instance:HomepageTest.homepage@2cb4c3ab]" name="verify_T_shirt_link" duration-ms="144" started-at="2020-05-19T13:34:18Z" finished-at="2020-05-19T13:34:18Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- title -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:LoginpageTest.loginpage@61a485d2]" name="afterMethod" is-config="true" duration-ms="906" started-at="2020-05-18T13:41:21Z" finished-at="2020-05-18T13:41:22Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:LoginpageTest.loginpage@61a485d2]" name="beforeMethod" is-config="true" duration-ms="19854" started-at="2020-05-18T13:41:22Z" finished-at="2020-05-18T13:41:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verify_signin()[pri:0, instance:LoginpageTest.loginpage@61a485d2]" name="verify_signin" duration-ms="8376" started-at="2020-05-18T13:41:42Z" finished-at="2020-05-18T13:41:51Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_signin -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:LoginpageTest.loginpage@61a485d2]" name="afterMethod" is-config="true" duration-ms="886" started-at="2020-05-18T13:41:51Z" finished-at="2020-05-18T13:41:51Z">
+        </test-method> <!-- verify_T_shirt_link -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:HomepageTest.homepage@2cb4c3ab]" name="afterMethod" is-config="true" duration-ms="935" started-at="2020-05-19T13:34:18Z" finished-at="2020-05-19T13:34:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- LoginpageTest.loginpage -->
-      <class name="sign_inPage.sign_in_page">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:sign_inPage.sign_in_page@61dc03ce]" name="beforeMethod" is-config="true" duration-ms="25535" started-at="2020-05-18T13:39:30Z" finished-at="2020-05-18T13:39:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verify_SignInLink()[pri:0, instance:sign_inPage.sign_in_page@61dc03ce]" name="verify_SignInLink" duration-ms="176" started-at="2020-05-18T13:39:56Z" finished-at="2020-05-18T13:39:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_SignInLink -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sign_inPage.sign_in_page@61dc03ce]" name="afterMethod" is-config="true" duration-ms="902" started-at="2020-05-18T13:39:56Z" finished-at="2020-05-18T13:39:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:sign_inPage.sign_in_page@61dc03ce]" name="beforeMethod" is-config="true" duration-ms="17198" started-at="2020-05-18T13:39:57Z" finished-at="2020-05-18T13:40:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verify_dealAdd()[pri:0, instance:sign_inPage.sign_in_page@61dc03ce]" name="verify_dealAdd" duration-ms="84" started-at="2020-05-18T13:40:14Z" finished-at="2020-05-18T13:40:14Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_dealAdd -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sign_inPage.sign_in_page@61dc03ce]" name="afterMethod" is-config="true" duration-ms="933" started-at="2020-05-18T13:40:14Z" finished-at="2020-05-18T13:40:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:sign_inPage.sign_in_page@61dc03ce]" name="beforeMethod" is-config="true" duration-ms="24809" started-at="2020-05-18T13:40:15Z" finished-at="2020-05-18T13:40:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verify_logo()[pri:0, instance:sign_inPage.sign_in_page@61dc03ce]" name="verify_logo" duration-ms="93" started-at="2020-05-18T13:40:40Z" finished-at="2020-05-18T13:40:40Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_logo -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sign_inPage.sign_in_page@61dc03ce]" name="afterMethod" is-config="true" duration-ms="934" started-at="2020-05-18T13:40:40Z" finished-at="2020-05-18T13:40:41Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:sign_inPage.sign_in_page@61dc03ce]" name="beforeMethod" is-config="true" duration-ms="16700" started-at="2020-05-18T13:40:41Z" finished-at="2020-05-18T13:40:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="verify_title()[pri:0, instance:sign_inPage.sign_in_page@61dc03ce]" name="verify_title" duration-ms="13" started-at="2020-05-18T13:40:57Z" finished-at="2020-05-18T13:40:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_title -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:sign_inPage.sign_in_page@61dc03ce]" name="afterMethod" is-config="true" duration-ms="1147" started-at="2020-05-18T13:40:57Z" finished-at="2020-05-18T13:40:59Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- sign_inPage.sign_in_page -->
-    </test> <!-- My Store -->
-  </suite> <!-- My Store -->
+      </class> <!-- HomepageTest.homepage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
