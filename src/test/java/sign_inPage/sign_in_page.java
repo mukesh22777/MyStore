@@ -2,8 +2,15 @@ package sign_inPage;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
+
+import java.io.File;
+import java.io.IOException;
+
+import org.codehaus.plexus.util.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -23,12 +30,17 @@ public class sign_in_page {
 	}
 
 	@Test
-	public void verify_logo() throws InterruptedException {
+	public void verify_logo() throws InterruptedException, IOException {
 		
 		if( driver.findElement(By.xpath("//img[@class='logo img-responsive']")).isDisplayed()){
 			System.out.println("Logo is Visible");
 			}else{
 			System.out.println("Logo is InVisible");
+			WebElement logo = driver.findElement(By.xpath("//img[@class='logo img-responsive']"));
+			File file = logo.getScreenshotAs(OutputType.FILE);
+
+			File destifile = new File("logo.png");
+			FileUtils.copyFile(file, destifile);
 			}
 		}
 	

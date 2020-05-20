@@ -3,13 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="LoginpageTest.loginpage">
+      <class name="HomepageTest.homepage">
         <methods>
-          <include name="verify_signin"/>
           <include name="beforeMethod"/>
-          <include name="afterMethod"/>
+          <include name="verift_searsh_box"/>
         </methods>
-      </class> <!-- LoginpageTest.loginpage -->
+      </class> <!-- HomepageTest.homepage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
