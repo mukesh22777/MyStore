@@ -2,9 +2,9 @@ package HomepageTest;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-
 import java.io.File;
 import java.io.IOException;
+import java.util.Set;
 import org.apache.maven.shared.utils.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -12,7 +12,6 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 
 public class homepage {
@@ -36,7 +35,7 @@ public class homepage {
 		Thread.sleep(4000);
 	}
 
-	// @Test
+	@Test
 	public void verify_My_wish_list() {
 		driver.findElement(By.xpath("//a[@title='My wishlists']")).click();
 
@@ -47,7 +46,7 @@ public class homepage {
 		}
 	}
 
-	// @Test
+	@Test
 	public void verify_T_shirt_link() throws IOException {
 		if (driver.findElement(By.xpath("/html/body/div/div[1]/header/div[3]/div/div/div[6]/ul/li[3]/a"))
 				.isDisplayed()) {
@@ -84,7 +83,7 @@ public class homepage {
 
 	}
 
-	// @Test
+	@Test
 	public void verift_My_cart_link() {
 		if (driver.findElement(By.xpath("//a[@title='View my shopping cart']")).isDisplayed()) {
 			System.out.println("T_shirt Manu is Selected");
@@ -99,7 +98,7 @@ public class homepage {
 		}
 	}
 
-	// @Test
+	@Test
 	public void My_wish_list() {
 		if (driver.findElement(By.xpath("//span[text()='My wishlists']")).isDisplayed()) {
 			System.out.println("My_wish_list is Displayed");
@@ -128,8 +127,20 @@ public class homepage {
 		driver.findElement(By.xpath("//*[@id=\"best-sellers_block_right\"]/div/ul/li[1]/a/img")).click();
 		driver.findElement(By.xpath("//*[@id='add_to_cart']")).click();
 		// click on process to checkout.
-		//please manage popup for this part
-		driver.findElement(By.xpath("/html/body/div/div[1]/header/div[3]/div/div/div[4]/div[1]/div[2]/div[4]/a/span")).click();
+		// please manage popup windows for this part
+
+		String parentWindow = driver.getWindowHandle();
+		Set<String> handles = driver.getWindowHandles();
+		for (String windowHandle : handles) {
+			if (!windowHandle.equals(parentWindow)) {
+				driver.switchTo().window(windowHandle);
+				// <!--Perform your operation here for new window-->
+				driver.findElement(By.xpath("/html/body/div/div[1]/header/div[3]/div/div/div[4]/div[1]/div[2]/div[4]/a/span")).click();
+				driver.close(); // closing child window
+				driver.switchTo().window(parentWindow); // control to parent window
+			}
+		}
+
 		// click on cart link and open the cart page
 		driver.findElement(By.xpath("//a[@title='View my shopping cart']")).click();
 		// verify the order in the cart page
@@ -141,13 +152,13 @@ public class homepage {
 		}
 	}
 
-	// @Test
+	@Test
 	public void verift_backto_home_link() {
 		driver.findElement(By.xpath("//a[@title='Home']")).click();
 
 	}
 
-	// @AfterMethod
+	@AfterMethod
 	public void afterMethod() {
 		driver.quit();
 	}
