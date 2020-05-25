@@ -4,6 +4,7 @@
     <classes>
       <class name="sign_inPage.sign_in_page"/>
       <class name="LoginpageTest.loginpage"/>
+      <class name="HomepageTest.homepage"/>
       
     </classes>
  </test>
